@@ -12,7 +12,7 @@ models:
       columns:
         - name: status
           tests:
-            - accepted values:
+            - accepted_values:
                 values:
                   - shipped
                   - completed
