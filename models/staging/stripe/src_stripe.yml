@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+    - name: stripe
+      description: A replica of postgre database for stripe
+      database: raw
+      tables:
+        - name: payment
+          columns:
+            - name: id
+              tests:
+                - unique
+                - not_null
